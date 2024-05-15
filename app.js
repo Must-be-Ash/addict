@@ -12,7 +12,7 @@ if ('serviceWorker' in navigator) {
 
 // Live stream setup (assuming you're using a video streaming service)
 const videoElement = document.getElementById('live-stream');
-videoElement.src = 'YOUR_LIVE_STREAM_URL_HERE'; // Replace with your live stream URL
+videoElement.src = 'https://www.youtube.com/embed/xw2z5Yb_W40?si=MwETjPqtWnIhLvV4'; // Replace with your live stream URL
 
 // Emoji functionality
 const emojiButtons = document.querySelectorAll('.emoji-button');
