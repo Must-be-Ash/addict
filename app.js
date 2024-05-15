@@ -25,5 +25,10 @@ emojiButtons.forEach(button => {
     emojiElement.classList.add('emoji');
     emojiElement.textContent = emoji;
     emojiDisplay.appendChild(emojiElement);
+    
+    // Remove the emoji element after animation
+    setTimeout(() => {
+      emojiElement.remove();
+    }, 3000);
   });
 });
