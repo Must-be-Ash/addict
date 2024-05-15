@@ -15,17 +15,15 @@ const videoElement = document.getElementById('live-stream');
 videoElement.src = 'YOUR_LIVE_STREAM_URL_HERE'; // Replace with your live stream URL
 
 // Emoji functionality
-const emojiInput = document.getElementById('emoji-input');
-const sendEmojiButton = document.getElementById('send-emoji');
+const emojiButtons = document.querySelectorAll('.emoji-button');
 const emojiDisplay = document.getElementById('emoji-display');
 
-sendEmojiButton.addEventListener('click', () => {
-  const emoji = emojiInput.value.trim();
-  if (emoji) {
+emojiButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    const emoji = button.textContent;
     const emojiElement = document.createElement('div');
     emojiElement.classList.add('emoji');
     emojiElement.textContent = emoji;
     emojiDisplay.appendChild(emojiElement);
-    emojiInput.value = '';
-  }
+  });
 });
