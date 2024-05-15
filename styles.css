@@ -1,0 +1,32 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
+#app {
+  text-align: center;
+}
+
+#video-container {
+  margin-bottom: 20px;
+}
+
+#emoji-container {
+  margin-bottom: 20px;
+}
+
+#emoji-display {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.emoji {
+  font-size: 2rem;
+}
